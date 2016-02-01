@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		059BADBAB52F4D4234FFA07A /* libPods-LZCollectionViewSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DD6B3BD3853A97672B8E75 /* libPods-LZCollectionViewSample.a */; };
+		596C25AF1C5E47AC00F1ECFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25AE1C5E47AC00F1ECFC /* AppDelegate.m */; };
+		596C25B21C5E47AC00F1ECFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25B11C5E47AC00F1ECFC /* main.m */; };
+		596C25B41C5E47AC00F1ECFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596C25B31C5E47AC00F1ECFC /* Assets.xcassets */; };
+		596C25B71C5E47AC00F1ECFC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 596C25B51C5E47AC00F1ECFC /* MainMenu.xib */; };
+		596C25CC1C5E496700F1ECFC /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25CB1C5E496700F1ECFC /* MainWindowController.m */; };
+		596C25DE1C5E4D3700F1ECFC /* MyCollectionSupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25D91C5E4D3700F1ECFC /* MyCollectionSupplementaryView.m */; };
+		596C25DF1C5E4D3700F1ECFC /* MyCollectionSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 596C25DA1C5E4D3700F1ECFC /* MyCollectionSupplementaryView.xib */; };
+		596C25E01C5E4D3700F1ECFC /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25DC1C5E4D3700F1ECFC /* MyCollectionViewCell.m */; };
+		596C25E11C5E4D3700F1ECFC /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 596C25DD1C5E4D3700F1ECFC /* MyCollectionViewCell.xib */; };
+		596C25EE1C5E507200F1ECFC /* 001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 596C25E81C5E507200F1ECFC /* 001.JPG */; };
+		596C25EF1C5E507200F1ECFC /* 002.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 596C25E91C5E507200F1ECFC /* 002.JPG */; };
+		596C25F01C5E507200F1ECFC /* 003.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 596C25EA1C5E507200F1ECFC /* 003.JPG */; };
+		596C25F11C5E507200F1ECFC /* 004.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 596C25EB1C5E507200F1ECFC /* 004.JPG */; };
+		596C25F21C5E507200F1ECFC /* 005.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 596C25EC1C5E507200F1ECFC /* 005.JPG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		596C25D31C5E4AD000F1ECFC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54A54370CDC7E3EBC7AB6A9E /* Pods-LZCollectionViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZCollectionViewSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZCollectionViewSample/Pods-LZCollectionViewSample.debug.xcconfig"; sourceTree = "<group>"; };
+		596C25AA1C5E47AC00F1ECFC /* LZCollectionViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZCollectionViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		596C25AD1C5E47AC00F1ECFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		596C25AE1C5E47AC00F1ECFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		596C25B11C5E47AC00F1ECFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		596C25B31C5E47AC00F1ECFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		596C25B61C5E47AC00F1ECFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		596C25B81C5E47AC00F1ECFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		596C25CA1C5E496700F1ECFC /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		596C25CB1C5E496700F1ECFC /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		596C25D81C5E4D3700F1ECFC /* MyCollectionSupplementaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionSupplementaryView.h; sourceTree = "<group>"; };
+		596C25D91C5E4D3700F1ECFC /* MyCollectionSupplementaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionSupplementaryView.m; sourceTree = "<group>"; };
+		596C25DA1C5E4D3700F1ECFC /* MyCollectionSupplementaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionSupplementaryView.xib; sourceTree = "<group>"; };
+		596C25DB1C5E4D3700F1ECFC /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		596C25DC1C5E4D3700F1ECFC /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		596C25DD1C5E4D3700F1ECFC /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		596C25E81C5E507200F1ECFC /* 001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.JPG; sourceTree = "<group>"; };
+		596C25E91C5E507200F1ECFC /* 002.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.JPG; sourceTree = "<group>"; };
+		596C25EA1C5E507200F1ECFC /* 003.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.JPG; sourceTree = "<group>"; };
+		596C25EB1C5E507200F1ECFC /* 004.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 004.JPG; sourceTree = "<group>"; };
+		596C25EC1C5E507200F1ECFC /* 005.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.JPG; sourceTree = "<group>"; };
+		70DD6B3BD3853A97672B8E75 /* libPods-LZCollectionViewSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZCollectionViewSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9797CA8D1C8102CE3091D848 /* Pods-LZCollectionViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZCollectionViewSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZCollectionViewSample/Pods-LZCollectionViewSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		596C25A71C5E47AC00F1ECFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059BADBAB52F4D4234FFA07A /* libPods-LZCollectionViewSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		596C25A11C5E47AC00F1ECFC = {
+			isa = PBXGroup;
+			children = (
+				596C25AC1C5E47AC00F1ECFC /* LZCollectionViewSample */,
+				596C25AB1C5E47AC00F1ECFC /* Products */,
+				B0DEC5E9D1E0983056B503A9 /* Frameworks */,
+				70DF5EEDA1D8F699603D0A80 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		596C25AB1C5E47AC00F1ECFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				596C25AA1C5E47AC00F1ECFC /* LZCollectionViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		596C25AC1C5E47AC00F1ECFC /* LZCollectionViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				596C25E71C5E507200F1ECFC /* Resources */,
+				596C25E31C5E4DBB00F1ECFC /* Controllers */,
+				596C25E21C5E4DB300F1ECFC /* view */,
+				596C25AD1C5E47AC00F1ECFC /* AppDelegate.h */,
+				596C25AE1C5E47AC00F1ECFC /* AppDelegate.m */,
+				596C25B31C5E47AC00F1ECFC /* Assets.xcassets */,
+				596C25B51C5E47AC00F1ECFC /* MainMenu.xib */,
+				596C25B81C5E47AC00F1ECFC /* Info.plist */,
+				596C25B01C5E47AC00F1ECFC /* Supporting Files */,
+			);
+			path = LZCollectionViewSample;
+			sourceTree = "<group>";
+		};
+		596C25B01C5E47AC00F1ECFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				596C25B11C5E47AC00F1ECFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		596C25E21C5E4DB300F1ECFC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				596C25D81C5E4D3700F1ECFC /* MyCollectionSupplementaryView.h */,
+				596C25D91C5E4D3700F1ECFC /* MyCollectionSupplementaryView.m */,
+				596C25DA1C5E4D3700F1ECFC /* MyCollectionSupplementaryView.xib */,
+				596C25DB1C5E4D3700F1ECFC /* MyCollectionViewCell.h */,
+				596C25DC1C5E4D3700F1ECFC /* MyCollectionViewCell.m */,
+				596C25DD1C5E4D3700F1ECFC /* MyCollectionViewCell.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		596C25E31C5E4DBB00F1ECFC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				596C25CA1C5E496700F1ECFC /* MainWindowController.h */,
+				596C25CB1C5E496700F1ECFC /* MainWindowController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		596C25E71C5E507200F1ECFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				596C25E81C5E507200F1ECFC /* 001.JPG */,
+				596C25E91C5E507200F1ECFC /* 002.JPG */,
+				596C25EA1C5E507200F1ECFC /* 003.JPG */,
+				596C25EB1C5E507200F1ECFC /* 004.JPG */,
+				596C25EC1C5E507200F1ECFC /* 005.JPG */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		70DF5EEDA1D8F699603D0A80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54A54370CDC7E3EBC7AB6A9E /* Pods-LZCollectionViewSample.debug.xcconfig */,
+				9797CA8D1C8102CE3091D848 /* Pods-LZCollectionViewSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0DEC5E9D1E0983056B503A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70DD6B3BD3853A97672B8E75 /* libPods-LZCollectionViewSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		596C25A91C5E47AC00F1ECFC /* LZCollectionViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 596C25BB1C5E47AC00F1ECFC /* Build configuration list for PBXNativeTarget "LZCollectionViewSample" */;
+			buildPhases = (
+				42AF431E80D060C1AB80FF2C /* Check Pods Manifest.lock */,
+				596C25A61C5E47AC00F1ECFC /* Sources */,
+				596C25A71C5E47AC00F1ECFC /* Frameworks */,
+				596C25A81C5E47AC00F1ECFC /* Resources */,
+				596C25D31C5E4AD000F1ECFC /* Embed Frameworks */,
+				81F37C26670B372A75E36244 /* Embed Pods Frameworks */,
+				6FB2B84E8FAA40493895DD96 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZCollectionViewSample;
+			productName = LZCollectionViewSample;
+			productReference = 596C25AA1C5E47AC00F1ECFC /* LZCollectionViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		596C25A21C5E47AC00F1ECFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = darling0825;
+				TargetAttributes = {
+					596C25A91C5E47AC00F1ECFC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 596C25A51C5E47AC00F1ECFC /* Build configuration list for PBXProject "LZCollectionViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 596C25A11C5E47AC00F1ECFC;
+			productRefGroup = 596C25AB1C5E47AC00F1ECFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				596C25A91C5E47AC00F1ECFC /* LZCollectionViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		596C25A81C5E47AC00F1ECFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596C25F21C5E507200F1ECFC /* 005.JPG in Resources */,
+				596C25B41C5E47AC00F1ECFC /* Assets.xcassets in Resources */,
+				596C25DF1C5E4D3700F1ECFC /* MyCollectionSupplementaryView.xib in Resources */,
+				596C25E11C5E4D3700F1ECFC /* MyCollectionViewCell.xib in Resources */,
+				596C25EF1C5E507200F1ECFC /* 002.JPG in Resources */,
+				596C25F11C5E507200F1ECFC /* 004.JPG in Resources */,
+				596C25F01C5E507200F1ECFC /* 003.JPG in Resources */,
+				596C25EE1C5E507200F1ECFC /* 001.JPG in Resources */,
+				596C25B71C5E47AC00F1ECFC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42AF431E80D060C1AB80FF2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB2B84E8FAA40493895DD96 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZCollectionViewSample/Pods-LZCollectionViewSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F37C26670B372A75E36244 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZCollectionViewSample/Pods-LZCollectionViewSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		596C25A61C5E47AC00F1ECFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596C25DE1C5E4D3700F1ECFC /* MyCollectionSupplementaryView.m in Sources */,
+				596C25CC1C5E496700F1ECFC /* MainWindowController.m in Sources */,
+				596C25B21C5E47AC00F1ECFC /* main.m in Sources */,
+				596C25AF1C5E47AC00F1ECFC /* AppDelegate.m in Sources */,
+				596C25E01C5E4D3700F1ECFC /* MyCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		596C25B51C5E47AC00F1ECFC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				596C25B61C5E47AC00F1ECFC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		596C25B91C5E47AC00F1ECFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		596C25BA1C5E47AC00F1ECFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		596C25BC1C5E47AC00F1ECFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A54370CDC7E3EBC7AB6A9E /* Pods-LZCollectionViewSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LZCollectionViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darlingcoder.LZCollectionViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		596C25BD1C5E47AC00F1ECFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9797CA8D1C8102CE3091D848 /* Pods-LZCollectionViewSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LZCollectionViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.darlingcoder.LZCollectionViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		596C25A51C5E47AC00F1ECFC /* Build configuration list for PBXProject "LZCollectionViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				596C25B91C5E47AC00F1ECFC /* Debug */,
+				596C25BA1C5E47AC00F1ECFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		596C25BB1C5E47AC00F1ECFC /* Build configuration list for PBXNativeTarget "LZCollectionViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				596C25BC1C5E47AC00F1ECFC /* Debug */,
+				596C25BD1C5E47AC00F1ECFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 596C25A21C5E47AC00F1ECFC /* Project object */;
+}

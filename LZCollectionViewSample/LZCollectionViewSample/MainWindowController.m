@@ -1,29 +1,79 @@
-# LZCollectionView
-A custom CollectionView for Mac OSX like UICollectionView in iOS.
+//
+//  MainWindowController.m
+//  LZCollectionViewSample
+//
+//  Created by 沧海无际 on 16/1/31.
+//  Copyright © 2016年 darling0825. All rights reserved.
+//
 
-# Installation with CocoaPods
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like LZCollectionView in your projects.  You can install it with the following command:
+#import "MainWindowController.h"
+#import "MyCollectionViewCell.h"
+#import "MyCollectionSupplementaryView.h"
 
-```
-$ gem install cocoapods
-```
+static NSString *kContentTitleKey, *kContentImageKey;
 
-# Podfile
-To integrate LZCollectionView into your Xcode project using CocoaPods, specify it in your Podfile:
+@interface MainWindowController ()
 
-```
-pod 'LZCollectionView', '~> 0.1'
-```
+@end
 
-Then, run the following command:
-```
-$ pod install
-```
+@implementation MainWindowController
 
-# Usage
++ (void)initialize
+{
+    kContentTitleKey = @"itemTitle";
+    kContentImageKey = @"itemImage";
+}
 
-1.init
-```
+
+- (id)init
+{
+    self = [super initWithWindowNibName:@"GridViewTestWindowCtrl" owner:self];
+    if (self) {
+        _sections = [[NSMutableArray alloc] init];
+        _items1 = [[NSMutableArray alloc] init];
+        _items2 = [[NSMutableArray alloc] init];
+        _items3 = [[NSMutableArray alloc] init];
+        
+        _circleLayout = [[CircleLayout alloc] init];
+        _gridLayout   = [[LZCollectionViewGridLayout alloc] init];
+        _flowLayout   = [[LZCollectionViewFlowLayout alloc] init];
+    }
+    return self;
+}
+
+- (void)awakeFromNib
+{
+    [self createData];
+    
+    [_collectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"CellIdentifier"];
+    [_collectionView registerClass:[MyCollectionSupplementaryView class]
+        forSupplementaryViewOfKind:LZCollectionElementKindSectionHeader
+               withReuseIdentifier:@"SupplementaryViewIdentifier"];
+    [_collectionView registerClass:[MyCollectionSupplementaryView class]
+        forSupplementaryViewOfKind:LZCollectionElementKindSectionFooter
+               withReuseIdentifier:@"SupplementaryViewIdentifier"];
+    
+    [_collectionView setBackgroundColor:[NSColor lightGrayColor]];
+    [_collectionView setAllowsMultipleSelection:YES];
+    [_collectionView setAllowsMultipleSelectionWithDrag:YES];
+    
+    
+    [_collectionView setDelegate:self];
+    [_collectionView setDataSource:self];
+    
+    //layout
+    [_gridLayout setSectionInset:LZEdgeInsetsMake(10.0, 10.0, 10.0, 10.0)];
+    [_flowLayout setSectionInset:LZEdgeInsetsMake(10.0, 10.0, 10.0, 10.0)];
+    [_collectionView setCollectionViewLayout:_flowLayout];
+    
+    [_collectionView reloadData];
+}
+
+- (void)windowDidLoad
+{
+    [super windowDidLoad];
+}
+
 - (void)createData
 {
     NSImage *image1 = [NSImage imageNamed:@"001"];
@@ -32,7 +82,7 @@ $ pod install
     NSImage *image4 = [NSImage imageNamed:@"004"];
     NSImage *image5 = [NSImage imageNamed:@"005"];
     
-    for (int i = 0; i < 200; i++) {
+    for (int i = 0; i < 10; i++) {
         [_items1 addObject:[NSDictionary dictionaryWithObjectsAndKeys:
                             image1, kContentImageKey,
                             NSImageNameComputer, kContentTitleKey,
@@ -65,41 +115,15 @@ $ pod install
     image4 = nil;
     image5 = nil;
 }
-```
 
-2.reloadData
-```
-- (void)awakeFromNib
+
+#pragma mark
+#pragma mark ----------------------- CNGridView DataSource -----------------------
+- (NSInteger)numberOfSectionsInCollectionView:(LZCollectionView *)collectionView
 {
-    [self createData];
-    
-    [_collectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"CellIdentifier"];
-    [_collectionView registerClass:[MyCollectionSupplementaryView class]
-        forSupplementaryViewOfKind:LZCollectionElementKindSectionHeader
-               withReuseIdentifier:@"SupplementaryViewIdentifier"];
-    [_collectionView registerClass:[MyCollectionSupplementaryView class]
-        forSupplementaryViewOfKind:LZCollectionElementKindSectionFooter
-               withReuseIdentifier:@"SupplementaryViewIdentifier"];
-    
-    [_collectionView setBackgroundColor:[NSColor lightGrayColor]];
-    [_collectionView setAllowsMultipleSelection:YES];
-    [_collectionView setAllowsMultipleSelectionWithDrag:YES];
-    
-    
-    [_collectionView setDelegate:self];
-    [_collectionView setDataSource:self];
-    
-    //layout
-    [_gridLayout setSectionInset:LZEdgeInsetsMake(10.0, 10.0, 10.0, 10.0)];
-    [_flowLayout setSectionInset:LZEdgeInsetsMake(10.0, 10.0, 10.0, 10.0)];
-    [_collectionView setCollectionViewLayout:_flowLayout];
-    
-    [_collectionView reloadData];
+    return [_sections count];
 }
-```
 
-3.DataSource and Delegate
-```
 - (NSInteger)collectionView:(LZCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return [[_sections objectAtIndex:section] count];
@@ -133,11 +157,6 @@ $ pod install
     return cell;
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(LZCollectionView *)collectionView
-{
-    return [_sections count];
-}
-
 - (LZCollectionReusableView *)collectionView:(LZCollectionView *)collectionView
            viewForSupplementaryElementOfKind:(NSString *)kind
                                  atIndexPath:(NSIndexPath *)indexPath
@@ -145,7 +164,6 @@ $ pod install
     MyCollectionSupplementaryView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                              withReuseIdentifier:@"SupplementaryViewIdentifier"
                                                                                     forIndexPath:indexPath];
-    view.image = [NSImage imageNamed:@"001"];
     view.text = [NSString stringWithFormat:@"%ld-%ld",indexPath.section,indexPath.item];
     
     return view;
@@ -157,12 +175,14 @@ $ pod install
 {
     
 }
+
 - (void)collectionView:(LZCollectionView *)collectionView
 willDisplaySupplementaryView:(LZCollectionReusableView *)view
         forElementKind:(NSString *)elementKind
            atIndexPath:(NSIndexPath *)indexPath
 {
-    
+    MyCollectionSupplementaryView *supplementaryView = (MyCollectionSupplementaryView *)view;
+    supplementaryView.backgroundColor = [NSColor redColor];
 }
 
 - (NSSize)collectionView:(LZCollectionView *)collectionView
@@ -181,7 +201,7 @@ willDisplaySupplementaryView:(LZCollectionReusableView *)view
         return NSMakeSize(150, 150);
     }
     
-    return NSMakeSize(300, 300);
+    return NSMakeSize(200, 200);
 }
 
 - (NSSize)collectionView:(LZCollectionView *)collectionView
@@ -197,8 +217,6 @@ referenceSizeForFooterInSection:(NSInteger)section
 {
     return NSMakeSize([_collectionView visibleRect].size.width, 30);
 }
-```
 
-# License
-LZCollectionView is released under the MIT license. See LICENSE for details.
 
+@end

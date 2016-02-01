@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		596C257D1C5E463F00F1ECFC /* CircleLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C255C1C5E463F00F1ECFC /* CircleLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C257E1C5E463F00F1ECFC /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C255D1C5E463F00F1ECFC /* CircleLayout.m */; };
+		596C25801C5E463F00F1ECFC /* LZCollectionReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C255F1C5E463F00F1ECFC /* LZCollectionReusableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25811C5E463F00F1ECFC /* LZCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25601C5E463F00F1ECFC /* LZCollectionReusableView.m */; };
+		596C25821C5E463F00F1ECFC /* LZCollectionView+Keyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25611C5E463F00F1ECFC /* LZCollectionView+Keyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25831C5E463F00F1ECFC /* LZCollectionView+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25621C5E463F00F1ECFC /* LZCollectionView+Keyboard.m */; };
+		596C25841C5E463F00F1ECFC /* LZCollectionView+Mouse.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25631C5E463F00F1ECFC /* LZCollectionView+Mouse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25851C5E463F00F1ECFC /* LZCollectionView+Mouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25641C5E463F00F1ECFC /* LZCollectionView+Mouse.m */; };
+		596C25861C5E463F00F1ECFC /* LZCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25651C5E463F00F1ECFC /* LZCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25871C5E463F00F1ECFC /* LZCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25661C5E463F00F1ECFC /* LZCollectionView.m */; };
+		596C25881C5E463F00F1ECFC /* LZCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25671C5E463F00F1ECFC /* LZCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25891C5E463F00F1ECFC /* LZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25681C5E463F00F1ECFC /* LZCollectionViewCell.m */; };
+		596C258A1C5E463F00F1ECFC /* LZCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25691C5E463F00F1ECFC /* LZCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C258B1C5E463F00F1ECFC /* LZCollectionViewDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C256A1C5E463F00F1ECFC /* LZCollectionViewDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C258C1C5E463F00F1ECFC /* LZCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C256B1C5E463F00F1ECFC /* LZCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C258D1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C256C1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C258E1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C256D1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.m */; };
+		596C258F1C5E463F00F1ECFC /* LZCollectionViewFlowLayoutDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C256E1C5E463F00F1ECFC /* LZCollectionViewFlowLayoutDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25901C5E463F00F1ECFC /* LZCollectionViewGridLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C256F1C5E463F00F1ECFC /* LZCollectionViewGridLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25911C5E463F00F1ECFC /* LZCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25701C5E463F00F1ECFC /* LZCollectionViewGridLayout.m */; };
+		596C25921C5E463F00F1ECFC /* LZCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25711C5E463F00F1ECFC /* LZCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25931C5E463F00F1ECFC /* LZCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25721C5E463F00F1ECFC /* LZCollectionViewLayout.m */; };
+		596C25941C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25731C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25951C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25741C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.m */; };
+		596C25961C5E463F00F1ECFC /* LZIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25751C5E463F00F1ECFC /* LZIndexPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25971C5E463F00F1ECFC /* LZIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25761C5E463F00F1ECFC /* LZIndexPath.m */; };
+		596C25981C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25771C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C25991C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C25781C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.m */; };
+		596C259A1C5E463F00F1ECFC /* NSIndexPath+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C25791C5E463F00F1ECFC /* NSIndexPath+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C259B1C5E463F00F1ECFC /* NSIndexPath+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C257A1C5E463F00F1ECFC /* NSIndexPath+Additions.m */; };
+		596C259C1C5E463F00F1ECFC /* NSView+LZCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C257B1C5E463F00F1ECFC /* NSView+LZCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		596C259D1C5E463F00F1ECFC /* NSView+LZCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 596C257C1C5E463F00F1ECFC /* NSView+LZCollectionView.m */; };
+		596C259F1C5E46AB00F1ECFC /* LZEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 596C259E1C5E46AB00F1ECFC /* LZEdgeInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		596C25501C5E456000F1ECFC /* LZCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LZCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		596C255C1C5E463F00F1ECFC /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		596C255D1C5E463F00F1ECFC /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
+		596C255E1C5E463F00F1ECFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LZCollectionView/Info.plist; sourceTree = "<group>"; };
+		596C255F1C5E463F00F1ECFC /* LZCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionReusableView.h; sourceTree = "<group>"; };
+		596C25601C5E463F00F1ECFC /* LZCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionReusableView.m; sourceTree = "<group>"; };
+		596C25611C5E463F00F1ECFC /* LZCollectionView+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LZCollectionView+Keyboard.h"; sourceTree = "<group>"; };
+		596C25621C5E463F00F1ECFC /* LZCollectionView+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LZCollectionView+Keyboard.m"; sourceTree = "<group>"; };
+		596C25631C5E463F00F1ECFC /* LZCollectionView+Mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LZCollectionView+Mouse.h"; sourceTree = "<group>"; };
+		596C25641C5E463F00F1ECFC /* LZCollectionView+Mouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LZCollectionView+Mouse.m"; sourceTree = "<group>"; };
+		596C25651C5E463F00F1ECFC /* LZCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionView.h; sourceTree = "<group>"; };
+		596C25661C5E463F00F1ECFC /* LZCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionView.m; sourceTree = "<group>"; };
+		596C25671C5E463F00F1ECFC /* LZCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewCell.h; sourceTree = "<group>"; };
+		596C25681C5E463F00F1ECFC /* LZCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionViewCell.m; sourceTree = "<group>"; };
+		596C25691C5E463F00F1ECFC /* LZCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewDataSource.h; sourceTree = "<group>"; };
+		596C256A1C5E463F00F1ECFC /* LZCollectionViewDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewDefinitions.h; sourceTree = "<group>"; };
+		596C256B1C5E463F00F1ECFC /* LZCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewDelegate.h; sourceTree = "<group>"; };
+		596C256C1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		596C256D1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		596C256E1C5E463F00F1ECFC /* LZCollectionViewFlowLayoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewFlowLayoutDelegate.h; sourceTree = "<group>"; };
+		596C256F1C5E463F00F1ECFC /* LZCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewGridLayout.h; sourceTree = "<group>"; };
+		596C25701C5E463F00F1ECFC /* LZCollectionViewGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionViewGridLayout.m; sourceTree = "<group>"; };
+		596C25711C5E463F00F1ECFC /* LZCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewLayout.h; sourceTree = "<group>"; };
+		596C25721C5E463F00F1ECFC /* LZCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionViewLayout.m; sourceTree = "<group>"; };
+		596C25731C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		596C25741C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		596C25751C5E463F00F1ECFC /* LZIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZIndexPath.h; sourceTree = "<group>"; };
+		596C25761C5E463F00F1ECFC /* LZIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZIndexPath.m; sourceTree = "<group>"; };
+		596C25771C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+LZCollectionViewPalette.h"; sourceTree = "<group>"; };
+		596C25781C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+LZCollectionViewPalette.m"; sourceTree = "<group>"; };
+		596C25791C5E463F00F1ECFC /* NSIndexPath+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Additions.h"; sourceTree = "<group>"; };
+		596C257A1C5E463F00F1ECFC /* NSIndexPath+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Additions.m"; sourceTree = "<group>"; };
+		596C257B1C5E463F00F1ECFC /* NSView+LZCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+LZCollectionView.h"; sourceTree = "<group>"; };
+		596C257C1C5E463F00F1ECFC /* NSView+LZCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+LZCollectionView.m"; sourceTree = "<group>"; };
+		596C259E1C5E46AB00F1ECFC /* LZEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZEdgeInsets.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		596C254C1C5E456000F1ECFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		596C25461C5E456000F1ECFC = {
+			isa = PBXGroup;
+			children = (
+				596C255B1C5E463F00F1ECFC /* LZCollectionView */,
+				596C255E1C5E463F00F1ECFC /* Info.plist */,
+				596C25511C5E456000F1ECFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		596C25511C5E456000F1ECFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				596C25501C5E456000F1ECFC /* LZCollectionView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		596C255B1C5E463F00F1ECFC /* LZCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				596C259E1C5E46AB00F1ECFC /* LZEdgeInsets.h */,
+				596C255C1C5E463F00F1ECFC /* CircleLayout.h */,
+				596C255D1C5E463F00F1ECFC /* CircleLayout.m */,
+				596C255F1C5E463F00F1ECFC /* LZCollectionReusableView.h */,
+				596C25601C5E463F00F1ECFC /* LZCollectionReusableView.m */,
+				596C25611C5E463F00F1ECFC /* LZCollectionView+Keyboard.h */,
+				596C25621C5E463F00F1ECFC /* LZCollectionView+Keyboard.m */,
+				596C25631C5E463F00F1ECFC /* LZCollectionView+Mouse.h */,
+				596C25641C5E463F00F1ECFC /* LZCollectionView+Mouse.m */,
+				596C25651C5E463F00F1ECFC /* LZCollectionView.h */,
+				596C25661C5E463F00F1ECFC /* LZCollectionView.m */,
+				596C25671C5E463F00F1ECFC /* LZCollectionViewCell.h */,
+				596C25681C5E463F00F1ECFC /* LZCollectionViewCell.m */,
+				596C25691C5E463F00F1ECFC /* LZCollectionViewDataSource.h */,
+				596C256A1C5E463F00F1ECFC /* LZCollectionViewDefinitions.h */,
+				596C256B1C5E463F00F1ECFC /* LZCollectionViewDelegate.h */,
+				596C256C1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.h */,
+				596C256D1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.m */,
+				596C256E1C5E463F00F1ECFC /* LZCollectionViewFlowLayoutDelegate.h */,
+				596C256F1C5E463F00F1ECFC /* LZCollectionViewGridLayout.h */,
+				596C25701C5E463F00F1ECFC /* LZCollectionViewGridLayout.m */,
+				596C25711C5E463F00F1ECFC /* LZCollectionViewLayout.h */,
+				596C25721C5E463F00F1ECFC /* LZCollectionViewLayout.m */,
+				596C25731C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.h */,
+				596C25741C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.m */,
+				596C25751C5E463F00F1ECFC /* LZIndexPath.h */,
+				596C25761C5E463F00F1ECFC /* LZIndexPath.m */,
+				596C25771C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.h */,
+				596C25781C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.m */,
+				596C25791C5E463F00F1ECFC /* NSIndexPath+Additions.h */,
+				596C257A1C5E463F00F1ECFC /* NSIndexPath+Additions.m */,
+				596C257B1C5E463F00F1ECFC /* NSView+LZCollectionView.h */,
+				596C257C1C5E463F00F1ECFC /* NSView+LZCollectionView.m */,
+			);
+			path = LZCollectionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		596C254D1C5E456000F1ECFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596C25801C5E463F00F1ECFC /* LZCollectionReusableView.h in Headers */,
+				596C259C1C5E463F00F1ECFC /* NSView+LZCollectionView.h in Headers */,
+				596C258D1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.h in Headers */,
+				596C25821C5E463F00F1ECFC /* LZCollectionView+Keyboard.h in Headers */,
+				596C25921C5E463F00F1ECFC /* LZCollectionViewLayout.h in Headers */,
+				596C25901C5E463F00F1ECFC /* LZCollectionViewGridLayout.h in Headers */,
+				596C257D1C5E463F00F1ECFC /* CircleLayout.h in Headers */,
+				596C25861C5E463F00F1ECFC /* LZCollectionView.h in Headers */,
+				596C258B1C5E463F00F1ECFC /* LZCollectionViewDefinitions.h in Headers */,
+				596C25941C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.h in Headers */,
+				596C258F1C5E463F00F1ECFC /* LZCollectionViewFlowLayoutDelegate.h in Headers */,
+				596C25981C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.h in Headers */,
+				596C258C1C5E463F00F1ECFC /* LZCollectionViewDelegate.h in Headers */,
+				596C25961C5E463F00F1ECFC /* LZIndexPath.h in Headers */,
+				596C259F1C5E46AB00F1ECFC /* LZEdgeInsets.h in Headers */,
+				596C259A1C5E463F00F1ECFC /* NSIndexPath+Additions.h in Headers */,
+				596C25841C5E463F00F1ECFC /* LZCollectionView+Mouse.h in Headers */,
+				596C258A1C5E463F00F1ECFC /* LZCollectionViewDataSource.h in Headers */,
+				596C25881C5E463F00F1ECFC /* LZCollectionViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		596C254F1C5E456000F1ECFC /* LZCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 596C25581C5E456000F1ECFC /* Build configuration list for PBXNativeTarget "LZCollectionView" */;
+			buildPhases = (
+				596C254B1C5E456000F1ECFC /* Sources */,
+				596C254C1C5E456000F1ECFC /* Frameworks */,
+				596C254D1C5E456000F1ECFC /* Headers */,
+				596C254E1C5E456000F1ECFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZCollectionView;
+			productName = LZCollectionView;
+			productReference = 596C25501C5E456000F1ECFC /* LZCollectionView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		596C25471C5E456000F1ECFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = darling0825;
+				TargetAttributes = {
+					596C254F1C5E456000F1ECFC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 596C254A1C5E456000F1ECFC /* Build configuration list for PBXProject "LZCollectionView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 596C25461C5E456000F1ECFC;
+			productRefGroup = 596C25511C5E456000F1ECFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				596C254F1C5E456000F1ECFC /* LZCollectionView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		596C254E1C5E456000F1ECFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		596C254B1C5E456000F1ECFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596C259D1C5E463F00F1ECFC /* NSView+LZCollectionView.m in Sources */,
+				596C25971C5E463F00F1ECFC /* LZIndexPath.m in Sources */,
+				596C25991C5E463F00F1ECFC /* NSColor+LZCollectionViewPalette.m in Sources */,
+				596C25911C5E463F00F1ECFC /* LZCollectionViewGridLayout.m in Sources */,
+				596C25891C5E463F00F1ECFC /* LZCollectionViewCell.m in Sources */,
+				596C25851C5E463F00F1ECFC /* LZCollectionView+Mouse.m in Sources */,
+				596C257E1C5E463F00F1ECFC /* CircleLayout.m in Sources */,
+				596C25831C5E463F00F1ECFC /* LZCollectionView+Keyboard.m in Sources */,
+				596C25871C5E463F00F1ECFC /* LZCollectionView.m in Sources */,
+				596C259B1C5E463F00F1ECFC /* NSIndexPath+Additions.m in Sources */,
+				596C25931C5E463F00F1ECFC /* LZCollectionViewLayout.m in Sources */,
+				596C258E1C5E463F00F1ECFC /* LZCollectionViewFlowLayout.m in Sources */,
+				596C25811C5E463F00F1ECFC /* LZCollectionReusableView.m in Sources */,
+				596C25951C5E463F00F1ECFC /* LZCollectionViewLayoutAttributes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		596C25561C5E456000F1ECFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		596C25571C5E456000F1ECFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		596C25591C5E456000F1ECFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = LZCollectionView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darlingcoder.LZCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		596C255A1C5E456000F1ECFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = LZCollectionView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.darlingcoder.LZCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		596C254A1C5E456000F1ECFC /* Build configuration list for PBXProject "LZCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				596C25561C5E456000F1ECFC /* Debug */,
+				596C25571C5E456000F1ECFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		596C25581C5E456000F1ECFC /* Build configuration list for PBXNativeTarget "LZCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				596C25591C5E456000F1ECFC /* Debug */,
+				596C255A1C5E456000F1ECFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 596C25471C5E456000F1ECFC /* Project object */;
+}
