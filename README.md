@@ -12,7 +12,7 @@ $ gem install cocoapods
 To integrate LZCollectionView into your Xcode project using CocoaPods, specify it in your Podfile:
 
 ```
-pod 'LZCollectionView', '~> 0.1'
+pod 'LZCollectionView'
 ```
 
 Then, run the following command:
